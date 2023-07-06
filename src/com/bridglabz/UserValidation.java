@@ -52,6 +52,19 @@ public class UserValidation {
             System.out.println("is invalid");
         }
     }
+    void Password(){
+        Pattern pattern = Pattern.compile("[A-Za-z]{8,}");
+        System.out.println("Enter the Password");
+        Scanner sc=new Scanner(System.in);
+        String Password=sc.next();
+        Matcher matcher=pattern.matcher(Password);
+        if(matcher.matches()){
+            System.out.println("is valid");
+        }else{
+            System.out.println("is invalid");
+        }
+    }
+
 
     public static void main(String[] args) {
         UserValidation e=new UserValidation();
@@ -59,6 +72,7 @@ public class UserValidation {
         e.lastName();
         e.Email();
         e.MobileNo();
+        e.Password();
 
 
     }

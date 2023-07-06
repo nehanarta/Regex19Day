@@ -40,13 +40,25 @@ public class UserValidation {
         }
     }
 
-
+    void MobileNo(){
+        Pattern pattern = Pattern.compile("(0/91)?[7-9][0-9]{9}");
+        System.out.println("Enter the MobileNo");
+        Scanner sc=new Scanner(System.in);
+        String MobileNo=sc.next();
+        Matcher matcher=pattern.matcher(MobileNo);
+        if(matcher.matches()){
+            System.out.println("is valid");
+        }else{
+            System.out.println("is invalid");
+        }
+    }
 
     public static void main(String[] args) {
         UserValidation e=new UserValidation();
         e.firstName();
         e.lastName();
         e.Email();
+        e.MobileNo();
 
 
     }

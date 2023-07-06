@@ -76,7 +76,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/bridglabz/UserValidation.java</url>
-          <line>55</line>
+          <line>67</line>
           <properties class="com.bridglabz.UserValidation" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

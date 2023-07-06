@@ -27,6 +27,18 @@ public class UserValidation {
             System.out.println("is invalid");
         }
     }
+    void Email(){
+        Pattern pattern=Pattern.compile("^[A-Za-z0-9+_.-]+@(.+)$");
+        System.out.println("Enter the EmailId");
+        Scanner sc=new Scanner(System.in);
+        String EmailIdName=sc.next();
+        Matcher matcher=pattern.matcher(EmailIdName);
+        if(matcher.matches()){
+            System.out.println("is valid");
+        }else{
+            System.out.println("is invalid");
+        }
+    }
 
 
 
@@ -34,6 +46,7 @@ public class UserValidation {
         UserValidation e=new UserValidation();
         e.firstName();
         e.lastName();
+        e.Email();
 
 
     }

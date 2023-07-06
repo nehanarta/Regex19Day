@@ -53,8 +53,8 @@ public class UserValidation {
         }
     }
     void Password(){
-        Pattern pattern = Pattern.compile("[A-Za-z]{8,}");
-        System.out.println("Enter the Password");
+         Pattern pattern = Pattern.compile("^[A-Za-z0-9.,@#$_%+-]{8}+$");
+         System.out.println("Enter the Password");
         Scanner sc=new Scanner(System.in);
         String Password=sc.next();
         Matcher matcher=pattern.matcher(Password);
